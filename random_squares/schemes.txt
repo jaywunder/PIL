@@ -1,0 +1,43 @@
+lava:
+    (int(y / HEIGHT * 256),
+    int(y / HEIGHT * 256) - 128,
+    int(x / WIDTH * 256) - 256)
+
+greyscale: 
+    (int(y / HEIGHT * 256),
+    int(y / HEIGHT * 256),
+    int(y / HEIGHT * 256))
+         
+multicolor:
+    (int(x / WIDTH * 256),
+    int(y / HEIGHT * 256),
+    128)
+         
+multicolor2:
+    (int(x / WIDTH * 256),
+    int(y / HEIGHT * 256 + 32),
+    int(x / WIDTH * 256) + 128)
+    
+turquoise:
+    (int(y / HEIGHT * 256) - 128,
+    int(y / HEIGHT * 256) + 32,
+    int(y / HEIGHT * 256) + 64)
+    
+pink:
+    (int(y / HEIGHT * 256) + 128,
+    int(y / HEIGHT * 256) - 64,
+    int(y / HEIGHT * 256) + 64)
+    
+night scheme purple:
+        color = (int(y / HEIGHT * 128 + 16), 
+                 int(y / HEIGHT * 20), 
+                 int(y / HEIGHT * 128 + 16))
+                 
+        if randint(0, 10) == 3:
+            color = (int(y / HEIGHT * 128 + 8), 
+                 int(y / HEIGHT * 20), 
+                 int(y / HEIGHT * 128 + 16))
+        if randint(0, 10) == 3:
+            color = (int(y / HEIGHT * 128 + 16), 
+                 int(y / HEIGHT * 20), 
+                 int(y / HEIGHT * 128 + 8))
